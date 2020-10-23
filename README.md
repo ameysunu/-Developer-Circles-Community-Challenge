@@ -27,3 +27,6 @@ Before you start working and developing web apps with React, you are going to ne
 
 ![image](https://user-images.githubusercontent.com/48415436/97050896-da778900-1586-11eb-92a8-1b6e1956c4f7.png)
 
+* Choose an IDE of your choice. You can choose from Atom, VSCode or anyother prefferable IDE. I am using [Visual Studio Code IDE](https://code.visualstudio.com/), because I like its color theming and simple understandable UI. There are plenty of IDEs to choose from, VSCode is just my personal choice. Whichever IDE, you are done installing, go ahead and install the Babel and React Native Tools extensions. These would help you while writing your first react code.
+
+
