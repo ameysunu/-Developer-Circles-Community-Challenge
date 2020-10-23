@@ -18,5 +18,8 @@ Another best reason to learn React is, that it is simply the **best**.
 ## Getting Started
 Okay so, before getting started with React, the basic pre-requisite is to learn *HTML, CSS and JavaScript* because these are basic web development frameworks you'll need right before you dig into React. These don't take much time and are really super easy to learn and implement. 
 Assuming that you already know the above basic Web Development Frameworks, let's begin!
-#### Installation
 
+#### Installation
+Before you start working and developing web apps with React, you are going to need some tools and IDE's on your computer to work with.
+
+* Install (Node.JS)[https://nodejs.org/en/]. The website will automatically detect your OS and provide you installer and steps for the same. Once NodeJS has been installed, go ahead and fire up your Terminal/Command Prompt and type ``` node --version ```. It will successfully show the version of Node installed. If you get any other error command, reboot your system and if the error still persists, reinstall Node. My current Node version is ```v12.19.0``` which is the latest one, as of October 2020.
