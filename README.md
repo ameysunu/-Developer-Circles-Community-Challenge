@@ -33,7 +33,11 @@ Before you start working and developing web apps with React, you are going to ne
 ```npx create-react-app myapp```
 So, on entering this command you'll see some sort of package installations happening and please note that, this would take a little bit time for installation.
 Meanwhile let's breakdown the command and understand what exactly is happening.
-```npx```: Before understanding ```npx``` let's understand what ```npm``` is. ```npm``` is a package manager that aids you install those packages and manage their versions and dependencies. There are hundreds of thousands of Node.js libraries and applications on npm and many more are added every day. Meanwhile ```npx``` is also a CLI tool whose purpose is to make it easy to install and manage dependencies hosted in the npm registry. So, what's the difference? Well, ```npx``` makes it really easy to install packages and to run any sort of Node.js based executable that you would normally install via ``npm``.
+<br/>
+Before understanding ```npx``` let's understand what ```npm``` is. ```npm``` is a package manager that aids you install those packages and manage their versions and dependencies. There are hundreds of thousands of Node.js libraries and applications on npm and many more are added every day. Meanwhile ```npx``` is also a CLI tool whose purpose is to make it easy to install and manage dependencies hosted in the npm registry. So, what's the difference? Well, ```npx``` makes it really easy to install packages and to run any sort of Node.js based executable that you would normally install via ``npm``. ``create-react-app`` downloads the packages required to run and execute your first React App. ``myapp`` is the name of the app that I have given for my project, you can go ahead and change it to whatever you'd like. Now if everything went well and good enough, you'll see the below screen on your terminal.
+<br/>
+
+![image](https://user-images.githubusercontent.com/48415436/97052438-b23d5980-1589-11eb-8315-1e28c2c1672b.png)
 
 
 
