@@ -24,5 +24,6 @@ Before you start working and developing web apps with React, you are going to ne
 
 * Install [Node.JS](https://nodejs.org/en/). The website will automatically detect your OS and provide you installer and steps for the same. Once NodeJS has been installed, go ahead and fire up your Terminal/Command Prompt and type ``` node --version ```. It will successfully show the version of Node installed. If you get any other error command, reboot your system and if the error still persists, reinstall Node. My current Node version is ```v12.19.0``` which is the latest one, as of October 2020.
 <br/>
+
 ![image](https://user-images.githubusercontent.com/48415436/97050896-da778900-1586-11eb-92a8-1b6e1956c4f7.png)
 
