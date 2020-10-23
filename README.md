@@ -29,4 +29,10 @@ Before you start working and developing web apps with React, you are going to ne
 
 * Choose an IDE of your choice. You can choose from Atom, VSCode or anyother prefferable IDE. I am using [Visual Studio Code IDE](https://code.visualstudio.com/), because I like its color theming and simple understandable UI. There are plenty of IDEs to choose from, VSCode is just my personal choice. Whichever IDE, you are done installing, go ahead and install the Babel and React Native Tools extensions. These would help you while writing your first react code.
 
+* Now, just navigate to your desired folder where you would want to start your first React App. Fire up your terminal/command prompt on that folder and enter
+```npx create-react-app myapp```
+So, on entering this command you'll see some sort of package installations happening and please note that, this would take a little bit time for installation.
+Meanwhile let's breakdown the command and understand what exactly is happening.
+```npx```: Before understanding ```npx``` let's understand what ```npm``` is. ```npm``` is a package manager that aids you install those packages and manage their versions and dependencies. There are hundreds of thousands of Node.js libraries and applications on npm and many more are added every day. Meanwhile ```npx``` is also a CLI tool whose purpose is to make it easy to install and manage dependencies hosted in the npm registry. So, what's the difference? Well, 
+
 
