@@ -1,4 +1,4 @@
-## Getting Started with React JS
+## What is React JS
 React is an open source web framework used for developing UI components and is maintained by Facebook and a community of individual developers and companies. 
 
 ## Why React?
@@ -13,3 +13,6 @@ A common question that users may ask themselves before learning React. Well Reac
 * Twitter
 * [and more](https://stackshare.io/react)
 
+Another best reason to learn React is, that it is simply the **best**
+
+##
