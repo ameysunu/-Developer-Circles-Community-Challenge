@@ -35,7 +35,6 @@ So, on entering this command you'll see some sort of package installations happe
 Meanwhile let's breakdown the command and understand what exactly is happening.
 <br/>
 Before understanding ```npx``` let's understand what ```npm``` is. ```npm``` is a package manager that aids you install those packages and manage their versions and dependencies. There are hundreds of thousands of Node.js libraries and applications on npm and many more are added every day. Meanwhile ```npx``` is also a CLI tool whose purpose is to make it easy to install and manage dependencies hosted in the npm registry. So, what's the difference? Well, ```npx``` makes it really easy to install packages and to run any sort of Node.js based executable that you would normally install via ``npm``. ``create-react-app`` downloads the packages required to run and execute your first React App. ``myapp`` is the name of the app that I have given for my project, you can go ahead and change it to whatever you'd like. Now if everything went well and good enough, you'll see the below screen on your terminal.
-
 <br/>
 
 ![image](https://user-images.githubusercontent.com/48415436/97052438-b23d5980-1589-11eb-8315-1e28c2c1672b.png)
@@ -44,6 +43,12 @@ Before understanding ```npx``` let's understand what ```npm``` is. ```npm``` is 
 <br/>
 
 ![image](https://user-images.githubusercontent.com/48415436/97052699-28da5700-158a-11eb-92bb-669c469b4ae3.png)
+
+**And that's it, you have created and deployed your first React App**
+
+#### React JS
+
+Now that your app has been deployed on your local host, open up your project in your installed IDE. Go ahead and delete the all the files from  **src** and **public** folders. Do not touch your **node_modules** folder, as the name suggests, it consists of your react components and files that you'll need in order to run your React app.
 
 
 
