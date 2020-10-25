@@ -103,11 +103,23 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 ReactDOM.render(
-  <h1>
-  Hello
-  </h1>,
+  <h1> Hello World! </h1>,
   document.getElementById("root")
 );
 ```
 The value ``root`` was our id for ``<div>`` tag in HTML, hence by accessing root we would be rendering the HTML as a DOM element. Now save the changes in your IDE and hit refresh on your website and **Hello World!** would be displayed loud and proud on the website.
+
+Okay, now let's use a little bit Javascript inside our React App to get the current date and time from our system. Let's begin by getting the current date and time and print it out to the console. 
+
+```
+let time = new Date();
+console.log(time);
+```
+###### P.S. Do not call the variable time inside our React DOM yet.
+<br/>
+
+Hit refresh on your browser and pop up Developer Tools and open up your console on the browser. You'll see the current time and date printed on your console. Now, imagine you want this to be printed instead of Hello World!. What would you do?
+<br/>
+Well in React,
+
 
