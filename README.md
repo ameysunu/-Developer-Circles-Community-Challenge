@@ -120,6 +120,21 @@ console.log(time);
 
 Hit refresh on your browser and pop up Developer Tools and open up your console on the browser. You'll see the current time and date printed on your console. Now, imagine you want this to be printed instead of Hello World!. What would you do?
 <br/>
-Well in React,
+Well in React, in order to display javascript objects inside our render DOM, we have to use ``{}`` and add the object name within it. In our case, we want to display the ``time`` instead of **Hello World!**. So, go ahead and remove **Hello World!** from our ``<h1>`` tag and instead add ``{time}``.
 
+```
+ReactDOM.render(
+  <h1> {time} </h1>,
+  document.getElementById("root")
+);
+```
+Now, if you hit refresh, you'll see an error saying that ``Objects are'nt valid in the DOM``. So, how do we fix this now? Well the fix is simple, the const time is an object, hence we need to retrieve a String from it, and display it to the webpage. So, we can tap into the ``toString()`` property of the object to retrieve the string value from it.
+
+```
+ReactDOM.render(
+  <h1> {time.toString()} </h1>,
+  document.getElementById("root")
+);
+```
+Now, if you hit refresh, you'll see that the time now appears on your webpage and everytime you hit refresh, it updates the time.
 
