@@ -49,8 +49,28 @@ Before understanding ```npx``` let's understand what ```npm``` is. ```npm``` is 
 #### React JS
 
 Now that your app has been deployed on your local host, open up your project in your installed IDE. Go ahead and delete the all the files from  **src** and **public** folders. Do not touch your **node_modules** folder, as the name suggests, it consists of your react components and files that you'll need in order to run your React app. Okay, now that all the files are wiped and clean. Go ahead and create the files **index.html** and **styles.css** inside your **public** folder, and similarly create an **index.js** file inside your **src** folder. These are your basic boilerplate files that you'll need for running any sort of web development script.
+<br/>
 
+Okay, now open up your entire project workspace in your IDE and open up **index.html**
+Enter the following HTML boilerplate code into the file:
 
+```
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
+  <body>
+    <div id="root"></div>
+    <script src="../src/index.js" type="text/jsx"></script>
+  </body>
+</html>
+```
+Over here, if you are familiar with HTML, you'll know that we linked our **styles.css** sheet to our HTML code as well as our **index.js** file but the type mentioned is not **js** but instead it's **jsx**. So what is **jsx**?
 
+###### JSX
+
+JSX is a syntax extension to JavaScript, but is used with React for better UI Components description, hence producing React elements with which we render them to the React DOM(Document Object Model). Don't worry if you did'nt understand theoritically what JSX is, you'll understand when I begin writing the code.
 
