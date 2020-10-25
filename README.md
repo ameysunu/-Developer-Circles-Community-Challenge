@@ -73,4 +73,41 @@ Over here, if you are familiar with HTML, you'll know that we linked our **style
 ###### JSX
 
 JSX is a syntax extension to JavaScript, but is used with React for better UI Components description, hence producing React elements with which we render them to the React DOM(Document Object Model). Don't worry if you did'nt understand theoritically what JSX is, you'll understand when I begin writing the code.
+<br/>
+
+Moving on, let's open up **index.js** and begin writing some fresh React code. First of all you need to begin by importing the React module into our app.
+```
+import React from "react";
+import ReactDOM from "react-dom";
+```
+We have imported React and ReactDOM from the npm modules now onto our app. So, now let's begin rendering our first DOM element. For this, we can use ``ReactDOM`` which we imported from the node package and tap into the render functionality of our ``ReactDOM``package.
+```
+ReactDOM.render();
+```
+Inside our render function, let's declare display a ``<h1>`` element namely **"Hello World!"** on our webpage. So, let's go ahead and add the tag as follows in our ReactDOM:
+```
+ReactDOM.render(
+  <h1> Hello World! </h1>
+);
+```
+At this point if you go ahead and run ``npm start`` in your project root, it would launch our web page on our default browser with an error
+<br/>
+
+![image](https://user-images.githubusercontent.com/48415436/97116908-7e8d3b80-1711-11eb-89c9-e9dce01df216.png)
+
+<br/>
+Now what does this mean? Well we need to use ``document.getElementbyID`` in order to get began rendering HTML components. We can simply do that by tapping into our ``ReactDOM.render`` function and simply declaring the required render.
+
+```
+import React from "react";
+import ReactDOM from "react-dom";
+
+ReactDOM.render(
+  <h1>
+  Hello
+  </h1>,
+  document.getElementById("root")
+);
+```
+The value ``root`` was our id for ``<div>`` tag in HTML, hence by accessing root we would be rendering the HTML as a DOM element. Now save the changes in your IDE and hit refresh on your website and **Hello World!** would be displayed loud and proud on the website.
 
