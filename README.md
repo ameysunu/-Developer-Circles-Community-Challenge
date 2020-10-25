@@ -48,7 +48,7 @@ Before understanding ```npx``` let's understand what ```npm``` is. ```npm``` is 
 
 #### React JS
 
-Now that your app has been deployed on your local host, open up your project in your installed IDE. Go ahead and delete the all the files from  **src** and **public** folders. Do not touch your **node_modules** folder, as the name suggests, it consists of your react components and files that you'll need in order to run your React app.
+Now that your app has been deployed on your local host, open up your project in your installed IDE. Go ahead and delete the all the files from  **src** and **public** folders. Do not touch your **node_modules** folder, as the name suggests, it consists of your react components and files that you'll need in order to run your React app. Okay, now that all the files are wiped and clean. Go ahead and create the files **index.html** and **styles.css** inside your **public** folder, and similarly create an **index.js** file inside your **src** folder. These are your basic boilerplate files that you'll need for running any sort of web development script.
 
 
 
