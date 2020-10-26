@@ -234,7 +234,7 @@ setInterval(setTime, 1000);
 ```
 Inside our return replace ``{time.toString()}`` with ``{usualTime}`` and hit refresh. You'll see the time dynamically updating on its own. You can add designs and stylings to your new clock app by adding various styles in your ``styles.css`` file. If you have encountered various new functions like **setInterval**, don't worry, these are JS functions but are camel cased in React as it is desired, unlike JS which is usually kebab cased.
 <br/>
-You can go ahead and create styling such as, background color, fonts, text color etc. in your **styles.css**. And declare it in your **App.jsx** just like you would for your normal HTML file and that would be it. An amazing clock.!
+You can go ahead and create styling such as, background color, fonts, text color etc. in your **styles.css**. And declare it in your **App.jsx** just like you would for your normal HTML file and that would be it. An amazing clock.! Try doing this as a challenge to test yourself and to brush your CSS skills along with a little React practice.
 
 ## Tips
 A few tips that I have used and have come really handy to me while learning React.
