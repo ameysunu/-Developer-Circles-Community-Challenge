@@ -141,5 +141,42 @@ Now, if you hit refresh, you'll see that the time now appears on your webpage an
 ###### Hooks
 Hooks are functions that let you “hook into” React state and lifecycle features from function components. Now, here we shall be using the ``State Hook`` as we shall be setting the state of the app to dynamically change, instead of the user having to change it constantly.
 <br/>
-Let's get started with using the **State Hook**. Let's begin by making our app a little clean first
+Let's get started with using the **State Hook**. Let's begin by making our app a little clean first. Inside your **src** folder create a **components** folder and create a file named ``App.jsx``. Inside your App.jsx, import your React module. Now create a function called App and move your HTML renderings from ``index.js`` into our function by returning it and similarly let's move our JS Code as well. Your App.jsx should look like this now:
 
+```
+import React from "react";
+
+let time = new Date();
+console.log(time);
+
+function App(){
+return(
+ <h1>
+    {time.toString()}
+    </h1>
+)
+}
+```
+Now, let's begin exporting this function for our **index.js** to render it. You can export this by calling ``export default App``. Here App is our function, which we shall be importing for rendering or to any other component which might want to use it. Call this at after the function at the end. At this point, if you have moved everything from our **index.js** file to **App.jsx**, the **index.js** file would look like this:
+
+```
+import React from "react";
+import ReactDOM from "react-dom";
+
+ReactDOM.render(
+  document.getElementById("root")
+);
+```
+Now, since we have initiated export at our App, let's import it in our **index.js** file to use it for render. You can import it just like how we had imported our ``React`` module.
+```
+import App from "./components/App"
+```
+Here, you can skip the **.jsx** extension in the end of App, as React would automatically figure that out. Now, inside our ``ReactDOM.render`` we can add the render by simply calling
+```
+<App> <App/>
+```
+or simply 
+```
+<App />
+```
+Now, if you save your changes and refresh the browser, you'll see the same result as before, except now your program looks way cleaner and easily identifiable for other developers and yourself as well.
