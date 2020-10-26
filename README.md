@@ -246,5 +246,7 @@ It's just wow, you can see what the actual JS code means for the React code that
 
 * Code, Code and Code. If you are new to developing and coding and you are stuck somewhere, don't just give up. You can use websites like StackOverflow and DEV to get your answers as well as post any queries,and hey don't be shy to ask any sort of queries there, you can find many beginners to hardcore developers there, who help you all the time.
 
+###### Hope you enjoyed reading this tutorial. Do feel free to ask me any doubts. You can find my contact details on my README file on my profile. The sample code used here is uploaded along with this repo. Incase you get stuck, feel free to refer that. Thanks :)
+
 
 
