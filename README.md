@@ -208,3 +208,28 @@ return (
 }
 export default App;
 ```
+Now in order for us to use the State Hook, we have to import it from our React module again, so you can import it from your header file or directly use it by tapping into ``React.useState``, since you already have it imported. 
+```
+import React, {useState} from "react";
+```
+Now, currently our ``time`` shows time along with date and timezone, so in order to get only time from ``time``, we are going to extract it as a local timeString by tapping into our Date function.
+```
+let time = new Date().toLocaleTimeString('it-IT');
+```
+Now inside our App function, create two constant values one will be ``usualTime`` and the other would be ``currentTime``. We shall be setting our State to ``usualTime`` by parsing into it with the help of ``currentTime``.
+
+```
+const [usualTime, currentTime] = useState(time);
+```
+Now in order for the time to change and setState dynamically, let's create a function ``setTime``. Inside our ``setTime`` function we are going to declare a new time and pass it into our ``currentTime``
+```
+function setTime(){
+   let newTime = new Date().toLocaleTimeString('it-IT');
+    currentTime(newTime);  
+  };
+```
+We are almost done over here, we now need to create an interval of 1000 milliseconds which would lead to an auto-dynamic timer. Let's call upon the **setInterval** function and pass our function ``setTime`` and timer duration as well.
+```
+setInterval(setTime, 1000);
+```
+Inside our return replace ``{time.toString()}`` with ``{usualTime}`` and hit refresh. You'll see the time dynamically updating on its own. You can add designs and stylings to your new clock app by adding various styles in your ``styles.css`` file. If you have encountered various new functions like **setInterval**, don't worry, these are JS functions but are camel cased in React as it is desired, unlike JS which is usually kebab cased.
