@@ -234,4 +234,8 @@ setInterval(setTime, 1000);
 ```
 Inside our return replace ``{time.toString()}`` with ``{usualTime}`` and hit refresh. You'll see the time dynamically updating on its own. You can add designs and stylings to your new clock app by adding various styles in your ``styles.css`` file. If you have encountered various new functions like **setInterval**, don't worry, these are JS functions but are camel cased in React as it is desired, unlike JS which is usually kebab cased.
 <br/>
-You can go ahead and create styling such as, background color, fonts, text color etc. in your **styles.css**. And declare it in your **App.jsx** just like you would for your normal HTML file.
+You can go ahead and create styling such as, background color, fonts, text color etc. in your **styles.css**. And declare it in your **App.jsx** just like you would for your normal HTML file and that would be it. An amazing clock.!
+
+## Tips
+A few tips that I have used and have come really handy to me while learning React.
+* You might come across something called Babel.js while learning React. Well, if you are a JS developer and you really want to understand how exactly the React code is working in depth, then Babel.js is just for you. It's a next generation Javascript compiler which converts your next generation JS code into a browser-compatible JavaScript code. Let's test our basic React statement for showing Hello World! as a <h1> heading. For that head on to Babel.js [website](https://babeljs.io/)
