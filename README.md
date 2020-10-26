@@ -136,5 +136,10 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
-Now, if you hit refresh, you'll see that the time now appears on your webpage and everytime you hit refresh, it updates the time.
+Now, if you hit refresh, you'll see that the time now appears on your webpage and everytime you hit refresh, it updates the time. But as an end-user you don't want to keep hitting refresh everytime to see the time updating, instead you would want to see it update dynamically as your clock updates as well. Let's do this as well. In order to begin with this we shall be learning a React concept called **Hooks**
+<br/>
+###### Hooks
+Hooks are functions that let you “hook into” React state and lifecycle features from function components. Now, here we shall be using the ``State Hook`` as we shall be setting the state of the app to dynamically change, instead of the user having to change it constantly.
+<br/>
+Let's get started with using the **State Hook**
 
