@@ -1,8 +1,8 @@
 ## What is React JS
-React is an open source web framework used for developing UI components and is maintained by Facebook and a community of individual developers and companies. 
+React is an open-source web framework used for developing UI components and is maintained by Facebook and a community of individual developers and companies. 
 
 ## Why React?
-A common question that users may ask themselves before learning React. Well React is easy, simple and really powerful when it comes to developing web frameworks. We can see React taking over the entire Web Development in the long run. React is used to by more than 8000+ companies in their tech stacks including: 
+A common question that users may ask themselves before learning React. Well, React is easy, simple, and really powerful when it comes to developing web frameworks. We can see React taking over the entire Web Development in the long run. React is used by more than 8000+ companies in their tech stacks including: 
 
 * Airbnb
 * Netflix
@@ -27,14 +27,14 @@ Before you start working and developing web apps with React, you are going to ne
 
 ![image](https://user-images.githubusercontent.com/48415436/97050896-da778900-1586-11eb-92a8-1b6e1956c4f7.png)
 
-* Choose an IDE of your choice. You can choose from Atom, VSCode or anyother prefferable IDE. I am using [Visual Studio Code IDE](https://code.visualstudio.com/), because I like its color theming and simple understandable UI. There are plenty of IDEs to choose from, VSCode is just my personal choice. Whichever IDE, you are done installing, go ahead and install the Babel and React Native Tools extensions. These would help you while writing your first react code.
+* Choose an IDE of your choice. You can choose from Atom, VSCode, or any other preferable IDE. I am using [Visual Studio Code IDE](https://code.visualstudio.com/) because I like its color theming and simple understandable UI. There are plenty of IDEs to choose from, VSCode is just my personal choice. Whichever IDE, you are done installing, go ahead and install the Babel and React Native Tools extensions. These would help you while writing your first react code.
 
 * Now, just navigate to your desired folder where you would want to start your first React App. Fire up your terminal/command prompt on that folder and enter
 ```
 npx create-react-app myapp
 ```
-So, on entering this command you'll see some sort of package installations happening and please note that, this would take a little bit time for installation.
-Meanwhile let's breakdown the command and understand what exactly is happening.
+So, on entering this command you'll see some sort of package installations happening, and please note that this would take a little bit of time for installation.
+Meanwhile, let's breakdown the command and understand what exactly is happening.
 <br/>
 Before understanding **npx** let's understand what **npm** is. NPM is a package manager that aids you install those packages and manage their versions and dependencies. There are hundreds of thousands of Node.js libraries and applications on npm and many more are added every day. Meanwhile **npx** is also a CLI tool whose purpose is to make it easy to install and manage dependencies hosted in the npm registry. So, what's the difference? Well, **npx** makes it really easy to install packages and to run any sort of Node.js based executable that you would normally install via **npm**. **create-react-app** downloads the packages required to run and execute your first React App. **myapp** is the name of the app that I have given for my project, you can go ahead and change it to whatever you'd like. Now if everything went well and good enough, you'll see the below screen on your terminal.
 <br/>
@@ -50,7 +50,7 @@ Before understanding **npx** let's understand what **npm** is. NPM is a package 
 
 #### React JS
 
-Now that your app has been deployed on your local host, open up your project in your installed IDE. Go ahead and delete the all the files from  **src** and **public** folders. Do not touch your **node_modules** folder, as the name suggests, it consists of your react components and files that you'll need in order to run your React app. Okay, now that all the files are wiped and clean. Go ahead and create the files **index.html** and **styles.css** inside your **public** folder, and similarly create an **index.js** file inside your **src** folder. These are your basic boilerplate files that you'll need for running any sort of web development script.
+Now that your app has been deployed on your localhost, open up your project in your installed IDE. Go ahead and delete all the files from  **src** and **public** folders. Do not touch your **node_modules** folder, as the name suggests, it consists of your react components and files that you'll need in order to run your React app. Okay, now that all the files are wiped and clean. Go ahead and create the files **index.html** and **styles.css** inside your **public** folder, and similarly create an **index.js** file inside your **src** folder. These are the basic boilerplate files that you'll need for running any sort of web development script.
 <br/>
 
 Okay, now open up your entire project workspace in your IDE and open up **index.html**
@@ -70,19 +70,19 @@ Enter the following HTML boilerplate code into the file:
   </body>
 </html>
 ```
-Over here, if you are familiar with HTML, you'll know that we linked our **styles.css** sheet to our HTML code as well as our **index.js** file but the type mentioned is not **js** but instead it's **jsx**. So what is **jsx**?
+Over here, if you are familiar with HTML, you'll know that we linked our **styles.css** sheet to our HTML code as well as our **index.js** file but the type mentioned is not **js** but instead, it's **jsx**. So what is **jsx**?
 
 ###### JSX
 
-JSX is a syntax extension to JavaScript, but is used with React for better UI Components description, hence producing React elements with which we render them to the React DOM(Document Object Model). Don't worry if you did'nt understand theoritically what JSX is, you'll understand when I begin writing the code.
+JSX is a syntax extension to JavaScript but is used with React for better UI Components description, hence producing React elements with which we render them to the React DOM(Document Object Model). Don't worry if you didn't understand theoretically what JSX is, you'll understand when I begin writing the code.
 <br/>
 
-Moving on, let's open up **index.js** and begin writing some fresh React code. First of all you need to begin by importing the React module into our app.
+Moving on, let's open up **index.js** and begin writing some fresh React code. First of all, you need to begin by importing the React module into our app.
 ```
 import React from "react";
 import ReactDOM from "react-dom";
 ```
-We have imported React and ReactDOM from the npm modules now onto our app. So, now let's begin rendering our first DOM element. For this, we can use ``ReactDOM`` which we imported from the node package and tap into the render functionality of our ``ReactDOM``package.
+We have imported React and ReactDOM from the npm modules now onto our app. So, now let's begin rendering our first DOM element. For this, we can use ``ReactDOM`` which we imported from the node package and tap into the rendering function of our ``ReactDOM``package.
 ```
 ReactDOM.render();
 ```
@@ -92,13 +92,13 @@ ReactDOM.render(
   <h1> Hello World! </h1>
 );
 ```
-At this point if you go ahead and run ``npm start`` in your project root, it would launch our web page on our default browser with an error
+At this point, if you go ahead and run ``npm start`` in your project root, it would launch our web page on our default browser with an error
 <br/>
 
 ![image](https://user-images.githubusercontent.com/48415436/97116908-7e8d3b80-1711-11eb-89c9-e9dce01df216.png)
 
 <br/>
-Now what does this mean? Well we need to use ``document.getElementbyID`` in order to get began rendering HTML components. We can simply do that by tapping into our ``ReactDOM.render`` function and simply declaring the required render.
+Now, what does this mean? Well we need to use ``document.getElementbyID`` in order to get began rendering HTML components. We can simply do that by tapping into our ``ReactDOM.render`` function and simply declaring the required render.
 
 ```
 import React from "react";
@@ -111,7 +111,7 @@ ReactDOM.render(
 ```
 The value ``root`` was our id for ``<div>`` tag in HTML, hence by accessing root we would be rendering the HTML as a DOM element. Now save the changes in your IDE and hit refresh on your website and **Hello World!** would be displayed loud and proud on the website.
 
-Okay, now let's use a little bit Javascript inside our React App to get the current date and time from our system. Let's begin by getting the current date and time and print it out to the console. 
+Okay, now let's use a little bit of Javascript inside our React App to get the current date and time from our system. Let's begin by getting the current date and time and print it out to the console. 
 
 ```
 let time = new Date();
@@ -130,7 +130,7 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
-Now, if you hit refresh, you'll see an error saying that ``Objects are'nt valid in the DOM``. So, how do we fix this now? Well the fix is simple, the const time is an object, hence we need to retrieve a String from it, and display it to the webpage. So, we can tap into the ``toString()`` property of the object to retrieve the string value from it.
+Now, if you hit refresh, you'll see an error saying that ``Objects aren't valid in the DOM``. So, how do we fix this now? Well the fix is simple, the const time is an object, hence we need to retrieve a String from it, and display it to the webpage. So, we can tap into the ``toString()`` property of the object to retrieve the string value from it.
 
 ```
 ReactDOM.render(
@@ -138,7 +138,7 @@ ReactDOM.render(
   document.getElementById("root")
 );
 ```
-Now, if you hit refresh, you'll see that the time now appears on your webpage and everytime you hit refresh, it updates the time. But as an end-user you don't want to keep hitting refresh everytime to see the time updating, instead you would want to see it update dynamically as your clock updates as well. Let's do this as well. In order to begin with this we shall be learning a React concept called **Hooks**
+Now, if you hit refresh, you'll see that the time now appears on your webpage, and every time you hit refresh, it updates the time. But as an end-user you don't want to keep hitting refresh every time to see the time updating, instead, you would want to see it update dynamically as your clock updates as well. Let's do this as well. In order to begin with this, we shall be learning a React concept called **Hooks**
 <br/>
 ###### Hooks
 Hooks are functions that let you “hook into” React state and lifecycle features from function components. Now, here we shall be using the ``State Hook`` as we shall be setting the state of the app to dynamically change, instead of the user having to change it constantly.
@@ -159,7 +159,7 @@ return(
 )
 }
 ```
-Now, let's begin exporting this function for our **index.js** to render it. You can export this by calling ``export default App``. Here App is our function, which we shall be importing for rendering or to any other component which might want to use it. Call this at after the function at the end. At this point, if you have moved everything from our **index.js** file to **App.jsx**, the **index.js** file would look like this:
+Now, let's begin exporting this function for our **index.js** to render it. You can export this by calling the ``export default App``. Here App is our function, which we shall be importing for rendering or to any other component which might want to use it. Call this after the function at the end. At this point, if you have moved everything from our **index.js** file to **App.jsx**, the **index.js** file would look like this:
 
 ```
 import React from "react";
@@ -173,7 +173,7 @@ Now, since we have initiated export at our App, let's import it in our **index.j
 ```
 import App from "./components/App"
 ```
-Here, you can skip the **.jsx** extension in the end of App, as React would automatically figure that out. Now, inside our ``ReactDOM.render`` we can add the render by simply calling
+Here, you can skip the **.jsx** extension at the end of App, as React would automatically figure that out. Now, inside our ``ReactDOM.render`` we can add the render by simply calling
 ```
 <App> <App/>
 ```
@@ -210,11 +210,11 @@ return (
 }
 export default App;
 ```
-Now in order for us to use the State Hook, we have to import it from our React module again, so you can import it from your header file or directly use it by tapping into ``React.useState``, since you already have it imported. 
+Now in order for us to use the State Hook, we have to import it from our React module again, so you can import it from your header file or directly use it by tapping into ``React.useState``since you already have it imported. 
 ```
 import React, {useState} from "react";
 ```
-Now, currently our ``time`` shows time along with date and timezone, so in order to get only time from ``time``, we are going to extract it as a local timeString by tapping into our Date function.
+Now, currently our ``time`` shows the time along with date and timezone, so in order to get only time from ``time``, we are going to extract it as a local timeString by tapping into our Date function.
 ```
 let time = new Date().toLocaleTimeString('it-IT');
 ```
@@ -240,17 +240,17 @@ You can go ahead and create styling such as, background color, fonts, text color
 
 ## Tips
 A few tips that I have used and have come really handy to me while learning React.
-* You might come across something called Babel.js while learning React. Well, if you are a JS developer and you really want to understand how exactly the React code is working in depth, then Babel.js is just for you. It's a next generation Javascript compiler which converts your next generation JS code into a browser-compatible JavaScript code. Let's test some basic React sytnaxes and convert them into browser compatible JS code. For that head on to Babel.js [website](https://babeljs.io/) where you'll find an online interpreter, go ahead and write in some React code and watch the magic happen.
+* You might come across something called Babel.js while learning React. Well, if you are a JS developer and you really want to understand how exactly the React code is working in-depth, then Babel.js is just for you. It's a next-generation Javascript compiler that converts your next-generation JS code into a browser-compatible JavaScript code. Let's test some basic React syntaxes and convert them into browser compatible JS code. For that head on to Babel.js [website](https://babeljs.io/) where you'll find an online interpreter, go ahead and write in some React code and watch the magic happen.
 ![image](https://user-images.githubusercontent.com/48415436/97207769-6da10080-17cb-11eb-8e3b-42288dc9d89d.png)
 It's just wow, you can see what the actual JS code means for the React code that we have added, now imagine and overlook how powerful React is.
 
-* I really do recommend installing extensions on your IDE for React and React Tools as they save 15-20% of your time by giving you smart suggestions. In VSCode, you can head on to the Extension Marketplace and install them. You might find many extensions but choose the one that suits you the most by reading their introductions and watching demo video. I personally have installed Babel Javascript extension as well.
+* I really do recommend installing extensions on your IDE for React and React Tools as they save 15-20% of your time by giving you smart suggestions. In VSCode, you can head on to the Extension Marketplace and install them. You might find many extensions but choose the one that suits you the most by reading their introductions and watching a demo video. I personally have installed Babel Javascript extension as well.
 
-* Code, Code and Code. If you are new to developing and coding and you are stuck somewhere, don't just give up. You can use websites like StackOverflow and DEV to get your answers as well as post any queries,and hey don't be shy to ask any sort of queries there, you can find many beginners to hardcore developers there, who help you all the time.
+* Code, Code, and Code. If you are new to developing and coding and you are stuck somewhere, don't just give up. You can use websites like StackOverflow and DEV to get your answers as well as post any queries, and they don't be shy to ask any sort of queries there, you can find many beginners to hardcore developers there, who help you all the time.
 
 ###### [Walkthrough of my tutorial](https://youtu.be/yUiETDK-R7k)
 
-###### Hope you enjoyed reading this tutorial. Do feel free to ask me any doubts. You can find my contact details on my README file on my profile. The sample code used here is uploaded along with this repo. Incase you get stuck, feel free to refer that. Thanks :)
+###### Hope you enjoyed reading this tutorial. Do feel free to ask me any doubts. You can find my contact details on my README file on my profile. The sample code used here is uploaded along with this repo. In case you get stuck, feel free to refer to that. Thanks :)
 
 
 
