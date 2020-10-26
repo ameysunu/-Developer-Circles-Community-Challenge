@@ -180,3 +180,31 @@ or simply
 <App />
 ```
 Now, if you save your changes and refresh the browser, you'll see the same result as before, except now your program looks way cleaner and easily identifiable for other developers and yourself as well.
+At, this point your **index.js** file should look like this:
+```
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App"
+
+
+ReactDOM.render(
+ <App />,
+  document.getElementById("root")
+);
+```
+And your **App.jsx** should look like:
+```
+import React from "react";
+
+let time = new Date();
+console.log(time);
+
+function App(){
+return (
+    <h1>
+    {time.toString()}
+    </h1>
+)
+}
+export default App;
+```
