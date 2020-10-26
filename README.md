@@ -239,7 +239,6 @@ You can go ahead and create styling such as, background color, fonts, text color
 ## Tips
 A few tips that I have used and have come really handy to me while learning React.
 * You might come across something called Babel.js while learning React. Well, if you are a JS developer and you really want to understand how exactly the React code is working in depth, then Babel.js is just for you. It's a next generation Javascript compiler which converts your next generation JS code into a browser-compatible JavaScript code. Let's test some basic React sytnaxes and convert them into browser compatible JS code. For that head on to Babel.js [website](https://babeljs.io/) where you'll find an online interpreter, go ahead and write in some React code and watch the magic happen.
-<br/>
 ![image](https://user-images.githubusercontent.com/48415436/97207769-6da10080-17cb-11eb-8e3b-42288dc9d89d.png)
 <br/>
 It's just wow, you can see what the actual JS code means for the React code that we have added, now imagine how Powerful React is.
