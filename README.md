@@ -238,4 +238,4 @@ You can go ahead and create styling such as, background color, fonts, text color
 
 ## Tips
 A few tips that I have used and have come really handy to me while learning React.
-* You might come across something called Babel.js while learning React. Well, if you are a JS developer and you really want to understand how exactly the React code is working in depth, then Babel.js is just for you. It's a next generation Javascript compiler which converts your next generation JS code into a browser-compatible JavaScript code. Let's test our basic React statement for showing Hello World! as a <h1> heading. For that head on to Babel.js [website](https://babeljs.io/)
+* You might come across something called Babel.js while learning React. Well, if you are a JS developer and you really want to understand how exactly the React code is working in depth, then Babel.js is just for you. It's a next generation Javascript compiler which converts your next generation JS code into a browser-compatible JavaScript code. Let's test our basic React statement for showing Hello World! as a h1 heading. For that head on to Babel.js [website](https://babeljs.io/)
