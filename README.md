@@ -141,5 +141,5 @@ Now, if you hit refresh, you'll see that the time now appears on your webpage an
 ###### Hooks
 Hooks are functions that let you “hook into” React state and lifecycle features from function components. Now, here we shall be using the ``State Hook`` as we shall be setting the state of the app to dynamically change, instead of the user having to change it constantly.
 <br/>
-Let's get started with using the **State Hook**
+Let's get started with using the **State Hook**. Let's begin by making our app a little clean first
 
